@@ -5,17 +5,34 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ICF Black Party</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Lobster&family=Roboto:wght@400;900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <h1>Não perca essa promoção</h1>
-    <form action="" data-new-list-form>
-        <input data-new-list-input type="text" >
-        <br>
-        <button>Receber ofertas!</button>
-    </form>
-    <br>
-    <!--A div abaixo serve como uma div fantasma em que serão adicionados ou removidos os itens da lista-->
-    <div class="to-dos" id="toDoContainer" data-lists></div>
+    <div class="fatherContainer">
+    
+        <img class="logo" src="assets/images/Logo.png" alt="Logo da loja irmãos castro festas">
+        <div>
+            <h1 class="title">Black Party</h1>
+            <p>Todos os produtos com <strong>60%</strong> de desconto!!!</p>
+            <p>Oferta por tempo limitado</p>
+        </div>
+        <div>
+            <h2 class="title">Cadastre seu email para ter acesso</h2>
+            <form action="" data-new-list-form>
+                <input class="input" data-new-list-input type="text" >
+                <button class = "button">Receber ofertas!</button>
+            </form>
+        </div>
+        
+    </div>
+    <img src="assets/images/tada.png" alt="Ícone de festa" class="tadaIcon" id=tI01>
+    <img src="assets/images/tada.png" alt="Ícone de festa" id=tI02 class="tadaIcon">
+    <img src="assets/images/tada.png" alt="Ícone de festa" id=tI03 class="tadaIcon">
+    <img src="assets/images/tada.png" alt="Ícone de festa" id=tI04 class="tadaIcon">
+    
     <script src="script.js"></script>
 </body>
 </html>
