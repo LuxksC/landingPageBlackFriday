@@ -3,6 +3,7 @@
 const listContainer = document.querySelector(`[data-lists]`) //div fantasma
 const newListForm = document.querySelector(`[data-new-list-form]`)//formulário
 const newListInput = document.querySelector(`[data-new-list-input]`)//input
+const tadaIcon = document.getElementsByClassName("tadaIcon")
 
 newListForm.addEventListener('submit', function(e){ 
     e.preventDefault()//evita que a página atualize sempre que o botão for acionado. Esse é o padrão do submit
@@ -11,3 +12,18 @@ newListForm.addEventListener('submit', function(e){
     localStorage.setItem(Date.now().toString(), emailAdress)//função que irá ajuda a popular a lista de objetos usada como referência para os items da ToDoList. Descrição no Readme
     newListInput.value = null // Limpa o input após acionamento do evento
 })
+
+function getWidth() {
+    return Math.max(
+      document.body.scrollWidth,
+      document.documentElement.scrollWidth,
+      document.body.offsetWidth,
+      document.documentElement.offsetWidth,
+      document.documentElement.clientWidth
+    );
+  }
+
+
+if (getWidth()< 960) {
+    alert('Less than 960');
+}

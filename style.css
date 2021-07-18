@@ -1,6 +1,11 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
 }
 
 body{
@@ -16,28 +21,58 @@ h1 {
 }
 
 h2 {
-    font: 400 2rem 'Roboto', sans-serif;
+    font: 400 1.75rem 'Roboto', sans-serif;
+}
+
+h3 {
+    font: 400 1.2rem 'Roboto', sans-serif;
+    margin-bottom: 1rem;
+}
+
+
+div{
+    margin-bottom: 1rem;
 }
 
 input {
-    width:100%;
-    height: 1.5rem;
+    width: 80%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 2px solid;
+    border-radius: 4px;
+    box-sizing: border-box;
 }
 
 p{
-    font: 400 1.5rem 'Roboto', sans-serif;
+    font: 400 1.5rem 'Anton', sans-serif;
 }
 
 strong {
-    color: white;
+    color: hsl(0, 0%, 94%);
 }
+
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+div .linkIcon{
+    margin: 0rem 0.5rem;
+    height: 2rem;
+    width: auto;
+}
+
+
 
 .title {
     margin-bottom: 1rem;
 }
 
 .fatherContainer {
-    height: 90vh;
+    height: 100%;
+    margin-top: 2rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -49,8 +84,8 @@ strong {
 
 
 .logo {
-    width: auto;
-    height: 13rem;
+    width: 15rem;
+    height: auto;
 }
 
 .tadaIcon {
@@ -60,6 +95,29 @@ strong {
    position: fixed;
    z-index: 100;
 }
+
+.button {
+    background-color: hsl(270, 94%, 40%);
+    margin-bottom: 4rem;
+    color: hsl(0, 0%, 98%);
+    height: 3.5rem;
+    align-items: center;
+    padding: 0 2rem;
+    border-radius: 0.5rem;
+    font: 600 1rem 'Roboto', sans-serif;
+    transition: background 0.3s;
+    border: 2px solid;
+    border-color: hsl(0, 0%, 98%);
+  }
+
+  .button:hover {
+    background: hsl(274, 100%, 70%);
+    color: hsl(270, 85%, 8%);
+  }
+
+  .hide {
+      display: none;
+  }
 
 #tI01 {
     transform: rotateX(180deg);
