@@ -10,6 +10,7 @@ newListForm.addEventListener('submit', function(e){
     if (emailAdress === null || emailAdress === '') return // Se o valor do input for nada ou uma string vazia nada irá acontecer
     localStorage.setItem(Date.now().toString(), emailAdress)//função que irá ajuda a popular a lista de objetos usada como referência para os items da ToDoList. Descrição no Readme
     newListInput.value = null // Limpa o input após acionamento do evento
+    alert("Email cadastrado =]")
 })
 
 function getWidth() {
