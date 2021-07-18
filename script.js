@@ -3,7 +3,6 @@
 const listContainer = document.querySelector(`[data-lists]`) //div fantasma
 const newListForm = document.querySelector(`[data-new-list-form]`)//formulário
 const newListInput = document.querySelector(`[data-new-list-input]`)//input
-const tadaIcon = document.getElementsByClassName("tadaIcon")
 
 newListForm.addEventListener('submit', function(e){ 
     e.preventDefault()//evita que a página atualize sempre que o botão for acionado. Esse é o padrão do submit
@@ -23,7 +22,25 @@ function getWidth() {
     );
   }
 
+/*var f = function(){
 
-if (getWidth()< 960) {
-    alert('Less than 960');
+  var eventHeader = function(event) {
+    if (getWidth() < 1000) {
+      console.log(getWidth());
+    };
+    window.addEventListener('resize', eventHeader, false);
+  }
+}
+
+document.addEventListener('DOMContentLoaded', f, false);
+
+  window.addEventListener('resize', function(event){
+    if (window.innerWidth < 960) {
+      alert('Less than 960');
+  }
+  });*/
+
+if (getWidth() < 960) {
+  var tadaIcon = document.getElementById("divIcon");
+  tadaIcon.classList.add("hide")
 }
